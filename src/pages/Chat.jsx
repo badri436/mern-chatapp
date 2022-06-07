@@ -55,7 +55,7 @@ check()
     }
     fetchData()
   },[currentUser])
-  console.log(currentUser)
+
   const handleChatchange=async(chat)=>{
     setCurrentchat(chat)
   }

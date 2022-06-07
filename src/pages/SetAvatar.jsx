@@ -31,7 +31,7 @@ function SetAvatar() {
     useEffect(()=>{
         async function checkAvatar(){
             const user=await JSON.parse(localStorage.getItem("chat-app-user"))
-            console.log(user)
+    
             if(user.avatarImage){
                 navigate('/chat')
             }
@@ -60,7 +60,7 @@ function SetAvatar() {
             const {data}=await axios.post(`${avatarRoute}/${user._id}`,{
                 image:image[selectedAvatar]
             })
-            console.log(data.data.avatarImagesStatus)
+        
             if(data.data.avatarImagesStatus===true){
                 user.avatarImage=data.data.avatarImage
                 localStorage.setItem("chat-app-user",JSON.stringify(user))
@@ -160,8 +160,9 @@ width:100vw;
    
 }
 .submit-btn{
-        background-color:#997afo;
+      
         padding:1rem 2rem;
+        background-color: green;
         font-weight:bold;
         cursor:pointer;
         font-size:1rem;

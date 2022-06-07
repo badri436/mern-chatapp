@@ -20,7 +20,6 @@ function Chatcontainer({currentChat,currentUser,socket}) {
             from:currentUser._id,
             to:currentChat._id
         })
-        console.log(response.data)
         setMessages(response.data)
         setIsLoading(true)
     }

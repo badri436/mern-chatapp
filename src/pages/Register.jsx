@@ -62,7 +62,7 @@ const handleSubmit=async(event)=>{
     if(data.status===false){
         toast.error(data.message,toastOptions)
     }else{
-        console.log(data.status)
+
         localStorage.setItem('chat-app-user',JSON.stringify(data.data))
         navigate("/setAvatar")
    

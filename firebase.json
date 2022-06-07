@@ -1,5 +1,7 @@
 {
   "hosting": {
+    "site":"badrichatapp",
+    
     "public": "build",
     "ignore": [
       "firebase.json",
