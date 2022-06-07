@@ -82,7 +82,7 @@ const handleValidation=()=>{
             <input type={"password"} placeholder="password" name="password" onChange={(e)=>handleChange(e)}></input>
            
             <button type='submit'>Login</button>
-            <span>Don't have an account ? <Link to="/register">Register</Link></span>
+            <span>Don't have an account ? <Link to="/">Register</Link></span>
         </form>
     </FormContainer>
     <ToastContainer/>
