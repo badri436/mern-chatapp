@@ -1,4 +1,4 @@
-export const host = "https://chat-app-28e7d.web.app/"
+export const host = "https://badri-chat-app.herokuapp.com"
 
 export const registerRoute = `${host}/api/auth/register`
 export const loginRoute = `${host}/api/auth/login`

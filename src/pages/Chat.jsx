@@ -7,6 +7,7 @@ import Contact from '../components/Contact'
 import Welcome from '../components/Welcome'
 import Chatcontainer from '../components/Chatcontainer'
 import {io, Socket} from "socket.io-client"
+import Logout from '../components/Logout'
 function Chat() {
   const socket=useRef()
   const [contacts,setContacts]=useState([])
@@ -60,13 +61,18 @@ check()
   }
   return (
     <Container>
+
       <div className="container">
+     
       <Contact contacts={contacts} currentUser={currentUser} changeChat={handleChatchange}/>
       {
         isLoaded && currentChat===undefined ? (<Welcome currentUser={currentUser}/>):(
         <Chatcontainer currentChat={currentChat} currentUser={currentUser} socket={socket}/> )
       }
-      
+     
+      </div>
+      <div className="logout">
+      <Logout/>
       </div>
      
     </Container>  )

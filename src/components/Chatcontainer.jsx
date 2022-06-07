@@ -92,7 +92,7 @@ function Chatcontainer({currentChat,currentUser,socket}) {
                   <h3>{currentChat.name}</h3>
               </div>
           </div>
-          <Logout/>
+          
       </div>
 
      <div className="chat-messages">
@@ -114,7 +114,7 @@ function Chatcontainer({currentChat,currentUser,socket}) {
          }
      </div>
     <Chatinput handleSendmsg={handleSendmsg}/>
-      
+  
   </Container>
       )
 }
